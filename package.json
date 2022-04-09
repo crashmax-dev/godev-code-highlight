@@ -1,8 +1,8 @@
 {
-  "name": "webpack-userscript-template",
+  "name": "godev-code-highlight",
   "version": "0.0.1",
-  "description": "webpack-userscript-template",
-  "homepage": "https://crashmax-off.github.io/webpack-userscript-template/",
+  "description": "godev-code-highlight",
+  "homepage": "https://crashmax-off.github.io/godev-code-highlight/",
   "scripts": {
     "dev": "webpack server --node-env development",
     "build": "webpack --node-env production --progress",
@@ -17,9 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crashmax-dev/webpack-userscript-template.git"
+    "url": "git+https://github.com/crashmax-dev/godev-code-highlight.git"
   },
   "dependencies": {
+    "highlight.js": "^11.5.0",
     "redom": "^3.27.1"
   },
   "devDependencies": {

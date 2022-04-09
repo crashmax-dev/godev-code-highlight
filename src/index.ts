@@ -1,38 +1,13 @@
-import { el, mount } from 'redom'
-import fetcher from './utils/fetcher'
-import watcher from './utils/safe-event-emitter'
-import './styles/global.scss'
+import { Theme } from './theme'
+import { hightlightCode } from './highlight'
+import { clipboardButton } from './clipboard-button'
+import './styles.scss'
 
-(async () => {
-  /** RE:DOM */
-  const logo = el('img', {
-    src: BASE_PATH + 'typescript.png',
-    style: {
-      display: 'block',
-      marginLeft: 'auto',
-      marginRight: 'auto'
-    }
-  })
+const theme = new Theme()
+theme.apply()
 
-  mount(document.querySelector('body > div')!, logo)
-
-  /** fetch example */
-  interface ITodos {
-    completed: boolean
-    id: number
-    title: string
-    userId: number
-  }
-
-  const response = await fetcher<ITodos>(
-    'https://jsonplaceholder.typicode.com/todos/10',
-    { method: 'GET' }
-  )
-
-  console.log(response)
-
-  /** webpack define */
-  console.log(VERSION)
-  console.log(NODE_ENV)
-  console.log(BASE_PATH)
-})()
+const codeBlocks = document.querySelectorAll<HTMLElement>('pre code')
+codeBlocks.forEach((code) => {
+  hightlightCode(code)
+  clipboardButton(code)
+})
