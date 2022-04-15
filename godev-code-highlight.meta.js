@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name        godev-code-highlight
-// @version     0.0.1
+// @version     1.0.0
 // @author      Vitalij Ryndin
 // @description godev-code-highlight
-// @homepage    https://crashmax-off.github.io/godev-code-highlight/
-// @include     /^(http|https)://go.dev.*$/
+// @homepage    https://crashmax-dev.github.io/godev-code-highlight/
+// @updateURL   https://crashmax-dev.github.io/godev-code-highlight/godev-code-highlight.meta.js
+// @downloadURL https://crashmax-dev.github.io/godev-code-highlight/godev-code-highlight.user.js
+// @include     https://go.dev/doc/*
 // ==/UserScript==
