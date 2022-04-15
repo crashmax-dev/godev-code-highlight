@@ -28,6 +28,8 @@ export const UserScriptConfig: IWebpackUserScript = {
     description: pkg.description,
     version: pkg.version,
     author: pkg.author.name,
-    include: '/^(http|https)://go.dev.*$/'
+    updateURL: `${pkg.homepage}${pkg.name}.meta.js`,
+    downloadURL: `${pkg.homepage}${pkg.name}.user.js`,
+    include: 'https://go.dev/doc/*'
   }
 }
