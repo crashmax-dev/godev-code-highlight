@@ -1,7 +1,7 @@
-import { Theme } from './theme.js'
-import { hightlightCode } from './highlight.js'
 import { clipboardButton } from './clipboard-button.js'
+import { hightlightCode } from './highlight.js'
 import './styles.scss'
+import { Theme } from './theme.js'
 
 const theme = new Theme()
 theme.apply()

@@ -6,7 +6,8 @@
   "homepage": "https://crashmax-dev.github.io/godev-code-highlight/",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build"
+    "build": "vite build",
+    "format": "prettier --write --ignore-unknown **"
   },
   "author": {
     "name": "Vitalij Ryndin",
@@ -23,6 +24,7 @@
     "redom": "^3.29.0"
   },
   "devDependencies": {
+    "@crashmax/prettier-config": "^2.0.3",
     "@crashmax/tsconfig": "^1.0.2",
     "@types/tampermonkey": "^4.0.5",
     "sass": "^1.54.5",
