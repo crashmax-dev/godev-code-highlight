@@ -1,6 +1,6 @@
 import hljs from 'highlight.js/lib/core'
-import go from 'highlight.js/lib/languages/go'
 import bash from 'highlight.js/lib/languages/bash'
+import go from 'highlight.js/lib/languages/go'
 import json from 'highlight.js/lib/languages/json'
 
 hljs.registerLanguage('go', go)
