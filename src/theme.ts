@@ -1,3 +1,6 @@
+import dark from 'highlight.js/styles/github-dark.css?inline'
+import light from 'highlight.js/styles/github.css?inline'
+
 export class Theme {
   private theme: string
 
@@ -28,11 +31,11 @@ export class Theme {
     }
   }
 
-  private async dark(): Promise<void> {
-    await require('highlight.js/scss/github-dark.scss')
+  private dark(): void {
+    GM_addStyle(dark)
   }
 
-  private async light(): Promise<void> {
-    await require('highlight.js/scss/github.scss')
+  private light(): void {
+    GM_addStyle(light)
   }
 }

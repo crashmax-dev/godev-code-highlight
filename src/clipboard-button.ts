@@ -5,13 +5,7 @@ export function clipboardButton(element: HTMLElement): void {
     className: 'go-Button go-Button--inline',
     onclick: () => {
       button.textContent = 'Copied'
-
-      let code = element.textContent!
-      if (code[0] === '$') {
-        code = code.slice(2)
-      }
-
-      navigator.clipboard.writeText(code)
+      navigator.clipboard.writeText(element.textContent!)
       setTimeout(() => button.textContent = 'Copy', 1000)
     }
   }, 'Copy')

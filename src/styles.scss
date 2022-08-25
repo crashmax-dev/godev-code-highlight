@@ -1,12 +1,13 @@
-.Article {
-  pre {
-    margin: 0px !important;
-    position: relative;
+pre {
+  position: relative;
+
+  code {
+    padding: 1rem;
   }
 
   button {
-    top: 6px;
-    right: 6px;
+    top: 10px;
+    right: 10px;
     position: absolute;
   }
 }
