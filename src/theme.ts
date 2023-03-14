@@ -32,10 +32,12 @@ export class Theme {
   }
 
   private dark(): void {
+    GM_addStyle(`.Article pre { background: #0d1117 !important; }`)
     GM_addStyle(dark)
   }
 
   private light(): void {
+    GM_addStyle(`.Article pre { background: #fff !important; }`)
     GM_addStyle(light)
   }
 }
